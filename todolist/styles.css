@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #9DC3C1;
+    color: white;
+    font-family:  'Architects Daughter', cursive;
+    min-height:100vh;
+
+}
+
+header{
+    font-size: 1.5rem;
+}
+
+header, form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline: none;
+}
+
+form input, form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: #D8E6E7;
+    outline: none;
+}
+
+form button{
+    background:#D8E6E7;
+    color: #77AAAD;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+form button:hover{
+    background:#77AAAD;
+    color:white;
+}
+
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.todo-list{ 
+    min-width: 30%;
+    list-style-type: none;
+
+}
+
+.todo{
+    background: #D8E6E7;
+    margin: 0.5rem;
+    color:black;
+    font-size:1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.todo-item{
+    flex:1;
+}
+
+.checkmark, .trash{
+    background-color: #77AAAD;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding:1rem;
+    font-size: 1rem;
+
+    outline: none;
+}
+.checkmark{
+    background-color: #218380;
+}
+
+.todo-item{
+    padding:0rem 0.5rem;
+}
+
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
